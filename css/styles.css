@@ -703,27 +703,14 @@ img {
 .footer-form-list {
   display: flex;
   align-items: center;
+  justify-content: baseline;
   gap: 12px;
 }
 
 .footer-form-label {
   position: relative;
   overflow: hidden;
-}
-
-.footer-form-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 16px 15px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-
-  transition: transform var(--trns-org);
+  background-color: transparent;
 }
 
 .footer-form-item {
@@ -738,8 +725,25 @@ img {
   outline: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.footer-form-text {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  padding-top: 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: transparent;
+  user-select: none;
+  transition: transform var(--trns-org);
+}
+
 .footer-form-item:focus + .footer-form-text {
-  transform: translateY(-70%);
+  transform: translateY(-90%);
 }
 
 .footer-form-item:focus {
@@ -893,6 +897,12 @@ img {
 }
 
 .modal-list {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16x;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -913,7 +923,13 @@ img {
 }
 
 .modal-list-text {
-  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
+  margin-bottom: 10px;
   padding: 12px 16px;
 }
 
@@ -929,7 +945,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .license-list {
